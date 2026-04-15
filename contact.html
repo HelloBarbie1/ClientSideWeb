@@ -31,194 +31,127 @@
 
   </header>
 
+<main class="container" style="background-color: rgba(37, 74, 28, 0.345);">
 
-
-  <main class="container"> <!-- Semantic role: main content unique to this page -->
-
-   <div class="hero-image"> 
-      <h1 class="hero"> Contact</h1>
-       <p class="hero-subtitle">Questions, Suggestions, and possible Requests </p>
-    </section>
-</div>
-
-   <h1>Hit my Line!</h1> <!-- Primary page heading -->
-
-
-
-
-  <section>
-     
-      <ul>
-        <li>Instagram: joeyyyy</li>
-        <li>Email: joeyyy...</li>
-      </ul>
-    </section>
-
-     <h2>Suggestions and such!</h2>
-     <ul>blah blah blah</ul>
-<!-- Supporting paragraph -->
-
-<h1>Heading Level 1 (Page Title)</h1> 
-
-   <h2>Heading Level 2 </h2> 
-
-
-
-   <h3>Heading Level 3</h3>
-
-
-
-   <h4>Heading Level 4</h4> 
-
-
-
-   <h5>Heading Level 5</h5> 
-
-
-
-   <h6>Heading Level 6</h6> 
-
-
-
-
-
-
-   <ul>
-
-    <li>BPPP1</li>
-
-    <li>BPPP2</li>
-
-    <li>BPPP3</li>
-
-    <li>BPPP4</li>
-
-   </ul>
-
-
-
-  
-
-
-
-   <ol>
-
-    <li>Item 1</li>
-
-    <li>Item 2</li>
-
-    <li>Item 3</li>
-
-    <li>Item 4</li>
-
-   </ol>
-
-
-
-  
-<h2 class="top-title">My Top Five</h2>
-<ul class="top-five">
-
-   <li><a href="https://www.cannagardening.com/articles/influence-colors-plants" target="_blank">How Colors Influence Plants </a></li>
-
-    <li><a href="https://soltech.com/blogs/blog/houseplant-fun-facts-you-probably-didn-t-know-but-totally-should" target="_blank">Houseplant Fun Facts</a></li>
-    
-  <li><a href="https://permapeople.org" target="_blank">Permapeople Plant Database</a></li>
-  
-  <li><a href="https://www.bhg.com/gardening/houseplants/projects/poisonous-houseplants/" target="_blank">Poisonous Houseplants Guide </a></li>
-   <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11446772/" target="_blank">Scientific PlantData</a></li>
-</ul>
+  <div class="hero-image"> 
+    <h1 class="hero">Contact</h1>
    
-<!-- Homework snippet -->
-<section class="flex-cards">
-<div class="card">
-
-    <img src="Assets\image_2026-02-25_003654293_cropped_processed_by_imagy.png"
-     alt="photo of ... " width="100%">
-
-    <h4>Title</h4>
-
-    <p>Description: Morbi tellus eros, sagittis ac odio sit amet, semper placerat dui. Curabitur sodales arcu in sem dapibus mollis.</p>
-
-    <button>More info</button>
-
   </div>
-  <!-- Homework snippet -->
 
- 
-<div class="card">
+  <!-- ADD MORE CONTENT HERE TO ENABLE SCROLL -->
+  <div style="height: 1500px;">
+    
+     
+<form action="https://formspree.io/f/mykboqvz" method="POST">
+    
+   <p>
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name"
+      placeholder="first name">
+    </p>
 
-    <img src="Assets\2.5.jpg"
-     alt="photo of ... " width="100%">
+    <p>
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name"placeholder="last name">
+    </p>
 
-    <h4>Title</h4>
+    <p>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required
+      >
+    </p>
 
-    <p>Description: Morbi tellus eros, sagittis ac odio sit amet, semper placerat dui. Curabitur sodales arcu in sem dapibus mollis.</p>
+    <p>
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone"
+      placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{4}">
+      
+    </p>
 
-    <button>More info</button>
+    <p>
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="6" cols="40"placeholder="Type your message here"></textarea></textarea>
+    </p>
 
-  </div>
-  <!-- Homework snippet -->
- 
-<div class="card">
+<fieldset>
+  <legend><b>Best way to reach me</b></legend>
 
-    <img src="Assets\2.6.jpg"
-     alt="photo of ... " width="100%">
+  <p>
+    <input type="radio" 
+    id="email-option"
+     name="contact-method" 
+     value="email">
+    <label for="email-option">Email</label>
+  </p>
 
-    <h4>Title</h4>
+  <p>
+    <input 
+    type="radio" 
+    id="phone-option"
+     name="contact-method"
+      value="phone">
+    <label for="phone-option">Phone</label>
+  </p>
 
-    <p>Description: Morbi tellus eros, sagittis ac odio sit amet, semper placerat dui. Curabitur sodales arcu in sem dapibus mollis.</p>
+  <p>
+    <input 
+    type="radio"
+     id="text-option"
+      name="contact-method"
+       value="text">
+    <label for="text-option">Text</label>
+  </p>
+</fieldset>
+<p>
+  <label for="contact-time"><b>Best time to reach me</b></label>
+  <select id="contact-time" name="contact-time">
+    <option value="">--Select--</option>
+    <option value="morning">Morning</option>
+    <option value="afternoon">Afternoon</option>
+    <option value="evening">Evening</option>
+  </select>
+</p>
 
-    <button>More info</button>
+<fieldset>
+  <legend><b>How did you learn about this website</b></legend>
 
-  </div>
-  <!-- Homework snippet -->
+  <p>
+    <input 
+    type="checkbox" 
+    id="updates"
+     name="info" 
+     value="updates">
+    <label for="updates">Advertisement</label>
+  </p>
 
-<div class="card">
+  <p>
+    <input 
+    type="checkbox"
+     id="plants"
+      name="info"
+       value="plants">
+    <label for="plants">Friends/Family</label>
+  </p>
 
-    <img src="Assets\2.7.png"
-     alt="photo of ... " width="100%">
+  <p>
+    <input 
+    type="checkbox" 
+    id="sales"
+     name="info"
+      value="sales">
+    <label for="sales">Randomly</label>
+  </p>
+</fieldset>
 
-    <h4>Title</h4>
+    <p>
+      <button type="submit">Send Message</button>
+    </p>
 
-    <p>Description: Morbi tellus eros, sagittis ac odio sit amet, semper placerat dui. Curabitur sodales arcu in sem dapibus mollis.</p>
+  </form>
 
-    <button>More info</button>
+</main>
+  
 
-  </div>
-  <!-- Homework snippet -->
- 
-<div class="card">
-
-    <img src="Assets\2.8.jpg"
-     alt="photo of ... " width="100%">
-
-    <h4>Title</h4>
-
-    <p>Description: Morbi tellus eros, sagittis ac odio sit amet, semper placerat dui. Curabitur sodales arcu in sem dapibus mollis.</p>
-
-    <button>More info</button>
-
-  </div>
-  <!-- Homework snippet -->
- 
-<div class="card">
-
-    <img src="Assets\2.9.jpg"
-     alt="photo of ... " width="100%">
-
-    <h4>Title</h4>
-
-    <p>Description: Morbi tellus eros, sagittis ac odio sit amet, semper placerat dui. Curabitur sodales arcu in sem dapibus mollis.</p>
-
-    <button>More info</button>
-
-  </div>
-</section>
-
-
-
-   </main>
 
 
   <!-- SITE FOOTER Role: Contains secondary information (copyright, secondary links). Will also be extracted into an include later. -->
@@ -232,6 +165,11 @@
    </div>
 
   </footer>
+
+
+
+
+
 
  </body>
 
