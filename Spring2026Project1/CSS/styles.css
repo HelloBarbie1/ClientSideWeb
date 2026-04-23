@@ -7,9 +7,9 @@
 
 
 body{font-family: Verdana;
-background-color: #6a9d6a;
+background-color: #6a9d6a;}
 a {text-decoration-line: underline;}
-}
+
 
 
 ul.nav {
@@ -55,7 +55,7 @@ h1.hero {color:#dabe7c;
   border
   : 5px solid rgb(91, 98, 46);
   background-color: rgba(63, 97, 64, 0.73);
-width: 100%;
+width: 93%;
 padding-left: 5%;
 
  box-shadow: 10px 10px 10px rgba(63, 97, 64, 0.73);
@@ -264,6 +264,7 @@ font-family: 'Lucida Handwriting', cursive;
 position:fixed;
 
 width:100%;
+box-sizing: border-box;
 
 background-color:rgb(22, 59, 36);
 
@@ -389,3 +390,94 @@ fieldset label {
   display: inline;
 }
 
+.hamburger span {
+  width: 32px;
+  height: 10px;
+ background-color: #c99dee;
+ 
+  display: block;
+   transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 3px;
+  
+}
+.hamburger {
+display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  
+  height: 22px;
+  cursor: pointer;
+  margin-right: 25px;
+  margin-left: auto;
+  padding-bottom: 0;
+  border: 2px solid #715984;
+}
+#nav-toggle {
+  display: none;
+}
+@media (max-width: 768px)
+ {
+
+  .header-container {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-sizing: border-box;
+    
+  
+  }
+.hamburger:hover{
+ transform: scale(1.1) rotate(5deg);}
+  .hamburger {
+    display: flex;
+    gap: 7px;
+     background-color: rgba(49, 8, 44, 0.85);
+     
+  padding: 10px;
+  border-radius: 10px;
+   box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+  }
+
+  .main {
+    display: none;
+    width: 100%;
+     box-shadow: 0 0 8px rgba(201,157,238,0.4);
+    
+  }
+
+  #nav-toggle:checked ~ .main {
+    display: block;
+     box-shadow: 0 0 8px rgba(201,157,238,0.4);
+  }
+
+  ul.nav {
+    flex-direction: column;
+    padding: 10px 0;
+    margin: 0;
+     box-shadow: 0 0 8px rgba(201,157,238,0.4);
+    
+  }
+  
+  
+
+  ul.nav li a {
+    display: block;
+    padding: 12px;
+     box-shadow: 0 0 8px rgba(201,157,238,0.4);
+    
+  }
+ 
+
+}
+
+#nav-toggle:checked ~ .hamburger span:nth-child(1) {
+  transform: translateY(9.5px) rotate(45deg);
+}
+
+#nav-toggle:checked ~ .hamburger span:nth-child(2) {
+  transform: scaleX(0);
+}
+
+#nav-toggle:checked ~ .hamburger span:nth-child(3) {
+  transform: translateY(-9.5px) rotate(-45deg);
+}
